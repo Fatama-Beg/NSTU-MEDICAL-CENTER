@@ -3,21 +3,28 @@ import java.util.Properties
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
 }
 
 val keystorePropertiesFile = rootProject.file("key.properties")
 val keystoreProperties = Properties()
 val hasReleaseKeystore = keystorePropertiesFile.exists()
+
 if (hasReleaseKeystore) {
     keystorePropertiesFile.inputStream().use { keystoreProperties.load(it) }
 }
 
 android {
     namespace = "com.example.dishari"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.example.dishari"
+        minSdk = flutter.minSdkVersion
+        targetSdk = 36
+        versionCode = flutter.versionCode
+        versionName = flutter.versionName
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -25,7 +32,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
+        jvmTarget = "17"
     }
 
     signingConfigs {
@@ -33,28 +40,19 @@ android {
             create("release") {
                 keyAlias = keystoreProperties["keyAlias"] as String?
                 keyPassword = keystoreProperties["keyPassword"] as String?
-                storeFile = file(keystoreProperties["storeFile"] as String?)
+                storeFile = file(keystoreProperties["storeFile"] as String)
                 storePassword = keystoreProperties["storePassword"] as String?
             }
         }
     }
 
-    defaultConfig {
-        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.example.dishari"
-        // You can update the following values to match your application needs.
-        // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
-    }
-
     buildTypes {
         release {
-            // Uses real release signing if android/key.properties exists; otherwise falls back to debug.
             signingConfig =
-                if (hasReleaseKeystore) signingConfigs.getByName("release") else signingConfigs.getByName("debug")
+                if (hasReleaseKeystore)
+                    signingConfigs.getByName("release")
+                else
+                    signingConfigs.getByName("debug")
         }
     }
 }

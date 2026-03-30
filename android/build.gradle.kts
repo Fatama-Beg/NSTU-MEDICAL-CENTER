@@ -1,3 +1,5 @@
+import org.gradle.api.file.Directory
+
 allprojects {
     repositories {
         google()
@@ -5,16 +7,20 @@ allprojects {
     }
 }
 
-rootProject.buildDir = file("../build")
+val newBuildDir: Directory =
+    rootProject.layout.buildDirectory
+        .dir("../../build")
+        .get()
+rootProject.layout.buildDirectory.set(newBuildDir)
 
 subprojects {
-    project.buildDir = file("${rootProject.buildDir}/${project.name}")
+    val newSubprojectBuildDir: Directory = newBuildDir.dir(project.name)
+    project.layout.buildDirectory.set(newSubprojectBuildDir)
 }
-
 subprojects {
     project.evaluationDependsOn(":app")
 }
 
 tasks.register<Delete>("clean") {
-    delete(rootProject.buildDir)
+    delete(rootProject.layout.buildDirectory)
 }
