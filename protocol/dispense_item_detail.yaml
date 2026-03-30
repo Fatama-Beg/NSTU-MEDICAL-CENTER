@@ -1,0 +1,8 @@
+class: DispenseItemDetail
+fields:
+  medicineName: String
+  qtyNeeded: int
+  stock: int
+  itemId: int?
+  alternativeId: int?
+  alternativeName: String?

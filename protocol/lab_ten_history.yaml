@@ -1,0 +1,10 @@
+class: LabTenHistory
+fields:
+  resultId: int
+  testId: int
+  testName: String?
+  patientName: String
+  mobileNumber: String
+  isUploaded: bool
+  submittedAt: DateTime?
+  createdAt: DateTime?

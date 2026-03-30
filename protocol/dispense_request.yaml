@@ -1,0 +1,7 @@
+class: DispenseItemRequest
+fields:
+  itemId: int
+  medicineName: String
+  quantity: int
+  isAlternative: bool
+  originalMedicineId: int?

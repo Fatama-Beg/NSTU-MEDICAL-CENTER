@@ -1,0 +1,8 @@
+# medicine_alternative.yaml
+class: MedicineAlternative
+fields:
+  primaryMedicineId: int
+  primaryName: String
+  alternativeId: int
+  alternativeName: String
+  stock: int

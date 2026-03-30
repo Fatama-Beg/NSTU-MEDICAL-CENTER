@@ -1,0 +1,9 @@
+class: DispenseHistoryEntry
+fields:
+  dispenseId: int
+  prescriptionId: int
+  patientId: int?
+  patientName: String
+  mobileNumber: String
+  dispensedAt: DateTime
+  items: List<DispensedItemSummary>

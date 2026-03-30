@@ -1,0 +1,12 @@
+class: DashboardAnalytics
+fields:
+  totalPatients: int
+  outPatients: int
+  totalPrescriptions: int
+  medicinesDispensed: int
+  doctorCount: int
+  patientCount: int
+  prescriptionStats: PrescriptionStats
+  monthlyBreakdown: List<MonthlyBreakdown>
+  topMedicines: List<TopMedicine>
+  stockReport: List<StockReport>

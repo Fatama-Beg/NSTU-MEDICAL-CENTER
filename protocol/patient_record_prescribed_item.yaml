@@ -1,0 +1,6 @@
+class: PatientPrescribedItem
+fields:
+  medicineName: String
+  dosageTimes: String?
+  mealTiming: String?
+  duration: int?

@@ -1,0 +1,117 @@
+auth:
+  - requestProfileEmailChangeOtp:
+  - verifyProfileEmailChangeOtp:
+  - updateMyEmailWithOtp:
+  - login:
+  - startSignupPhoneOtp:
+  - verifyLoginOtp:
+  - logout:
+  - register:
+  - resendOtp:
+  - verifySignupEmailAndStartPhoneOtp:
+  - completeSignupWithPhoneOtp:
+  - sendWelcomeEmailViaResend:
+  - verifyOtp:
+  - requestPasswordReset:
+  - verifyPasswordReset:
+  - resetPassword:
+  - changePasswordUniversal:
+adminEndpoints:
+  - listUsersByRole:
+  - toggleUserActive:
+  - createUser:
+  - createUserWithPassword:
+  - getRosters:
+  - deleteRoster:
+  - saveRoster:
+  - listStaff:
+  - getAdminProfile:
+  - updateAdminProfile:
+  - changePassword:
+  - createAuditLog:
+  - getAuditLogs:
+  - getRecentAuditLogs:
+  - addAmbulanceContact:
+  - updateAmbulanceContact:
+adminInventoryEndpoints:
+  - addInventoryCategory:
+  - listInventoryCategories:
+  - addInventoryItem:
+  - updateInventoryStock:
+  - updateDispenserRestockFlag:
+  - listInventoryItems:
+  - updateMinimumThreshold:
+  - getItemTransactions:
+  - getInventoryAuditLogs:
+adminReportEndpoints:
+  - getAdminDashboardOverview:
+  - getDashboardAnalytics:
+  - getMedicineUsageByDateRange:
+  - getMedicineStockUsageByDateRange:
+  - getDispensedAvailableDates:
+  - getLabTestTotalsByDateRange:
+fileUpload:
+  - uploadFile:
+notification:
+  - createNotification:
+  - getMyNotifications:
+  - getMyNotificationCounts:
+  - getNotificationById:
+  - markAsRead:
+  - markAllAsRead:
+password:
+  - changePassword:
+dispenser:
+  - getDispenserProfile:
+  - updateDispenserProfile:
+  - listInventoryItems:
+  - restockItem:
+  - getDispenserHistory:
+  - getPendingPrescriptions:
+  - getPrescriptionDetail:
+  - getStockByFirstWord:
+  - searchInventoryItems:
+  - dispensePrescription:
+  - getDispenserDispenseHistory:
+doctor:
+  - getDoctorHomeData:
+  - getDoctorInfo:
+  - getDoctorProfile:
+  - updateDoctorProfile:
+  - getPatientByPhone:
+  - createPrescription:
+  - getReportsForDoctor:
+  - markReportReviewed:
+  - revisePrescription:
+  - getPatientPrescriptionList:
+  - getPrescriptionDetails:
+lab:
+  - getAllLabTests:
+  - createTestResult:
+  - createLabTest:
+  - updateLabTest:
+  - sendDummySms:
+  - submitResult:
+  - submitResultWithUrl:
+  - getAllTestResults:
+  - getStaffProfile:
+  - updateStaffProfile:
+  - getLabHomeTwoDaySummary:
+  - getLast10TestHistory:
+patient:
+  - getPatientProfile:
+  - listTests:
+  - getUserRole:
+  - updatePatientProfile:
+  - getMyLabReports:
+  - getMyPrescriptionList:
+  - finalizeReportUpload:
+  - getMyExternalReports:
+  - getPrescriptionList:
+  - getPrescriptionsByPatientId:
+  - getPrescriptionDetail:
+  - getMedicalStaff:
+  - getAmbulanceContacts:
+  - getOndutyStaff:
+greeting:
+  - hello:

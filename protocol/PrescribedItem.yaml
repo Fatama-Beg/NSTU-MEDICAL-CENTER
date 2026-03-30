@@ -1,0 +1,11 @@
+# prescribed_item.yaml
+class: PrescribedItem
+fields:
+  id: int?
+  prescriptionId: int
+  itemId: int?      # এটি যোগ করুন (inventory_item এর সাথে লিঙ্ক করার জন্য)
+  medicineName: String
+  dosageTimes: String?
+  mealTiming: String?
+  duration: int?
+  stock: int?

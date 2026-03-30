@@ -1,0 +1,7 @@
+class: DoctorHomeRecentItem
+fields:
+  title: String
+  subtitle: String
+  timeAgo: String
+  type: String
+  prescriptionId: int?

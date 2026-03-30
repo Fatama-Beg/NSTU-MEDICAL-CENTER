@@ -1,0 +1,7 @@
+class: OtpChallengeResponse
+fields:
+  success: bool
+  error: String?
+  token: String?
+  debugOtp: String?
+  expiresInSeconds: int?

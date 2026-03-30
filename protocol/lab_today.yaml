@@ -1,0 +1,8 @@
+class: LabToday
+fields:
+  todayTotal: int
+  todayPendingUploads: int
+  todaySubmitted: int
+  yesterdayTotal: int
+  yesterdayPendingUploads: int
+  yesterdaySubmitted: int

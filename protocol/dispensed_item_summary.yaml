@@ -1,0 +1,5 @@
+class: DispensedItemSummary
+fields:
+  medicineName: String
+  quantity: int
+  isAlternative: bool

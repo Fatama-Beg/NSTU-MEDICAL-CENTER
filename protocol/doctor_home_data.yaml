@@ -1,0 +1,10 @@
+class: DoctorHomeData
+fields:
+  doctorName: String
+  doctorDesignation: String
+  doctorProfilePictureUrl: String?
+  today: DateTime
+  lastMonthPrescriptions: int
+  lastWeekPrescriptions: int
+  recent: List<DoctorHomeRecentItem>
+  reviewedReports: List<DoctorHomeReviewedReport>

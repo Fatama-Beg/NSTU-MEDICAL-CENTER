@@ -1,0 +1,8 @@
+class: MedicineDetail
+fields:
+  prescribedItemId: int
+  itemId: int?
+  medicineName: String
+  dosageTimes: String
+  duration: int
+  stock: int

@@ -1,0 +1,10 @@
+class: DoctorProfile
+fields:
+  userId: int?
+  name: String?
+  email: String?
+  phone: String?
+  profilePictureUrl: String?
+  designation: String?
+  qualification: String?
+  signatureUrl: String?

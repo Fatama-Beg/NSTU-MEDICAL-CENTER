@@ -1,0 +1,9 @@
+class: InventoryItemInfo
+fields:
+  itemId: int
+  itemName: String
+  unit: String
+  minimumStock: int
+  categoryName: String
+  currentQuantity: int
+  canRestockDispenser: bool

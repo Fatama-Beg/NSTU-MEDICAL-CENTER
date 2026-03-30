@@ -1,0 +1,8 @@
+class: InventoryAuditLog
+fields:
+  id: int?
+  userName: String?
+  action: String
+  oldQuantity: int?
+  newQuantity: int?
+  timestamp: DateTime

@@ -1,0 +1,6 @@
+class: InventoryTransactionInfo
+fields:
+  itemId: int
+  transactionType: String
+  quantity: int
+  createdAt: DateTime

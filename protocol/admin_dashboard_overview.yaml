@@ -1,0 +1,4 @@
+class: AdminDashboardOverview
+fields:
+  totalUsers: int
+  totalStockItems: int

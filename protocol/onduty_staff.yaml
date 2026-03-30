@@ -1,0 +1,7 @@
+class: OndutyStaff
+fields:
+  staffId: int
+  staffName: String
+  staffRole: RosterUserRole
+  shiftDate: DateTime
+  shift: ShiftType

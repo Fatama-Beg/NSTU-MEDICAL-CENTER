@@ -1,0 +1,8 @@
+class: PatientPrescriptionListItem
+fields:
+  prescriptionId: int
+  name: String
+  mobileNumber: String?
+  gender: String?
+  age: int?
+  prescriptionDate: DateTime?

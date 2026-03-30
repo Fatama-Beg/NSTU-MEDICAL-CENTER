@@ -1,0 +1,6 @@
+class: ExternalReportFile
+fields:
+  bytes: ByteData?
+  contentType: String?
+  fileName: String?
+
