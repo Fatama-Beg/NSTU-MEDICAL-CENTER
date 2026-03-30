@@ -1,2 +1,1 @@
-# NSTU-MEDICAL-CENTER
-A Hospital Management App using dart
+# NSTU-Medical-Center
